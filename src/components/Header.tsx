@@ -8,17 +8,17 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { label: "Início", href: "#inicio" },
-    { label: "Planos", href: "#planos" },
-    { label: "Benefícios", href: "#beneficios" },
-    { label: "Como Funciona", href: "#como-funciona" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Início", href: "/" },
+    { label: "Planos", href: "/#planos" },
+    { label: "Benefícios", href: "/#beneficios" },
+    { label: "Rede Credenciada", href: "/clinicas" },
+    { label: "FAQ", href: "/#faq" },
   ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <a href="#inicio" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <img src={logoIcon} alt="Medic Benefícios" className="h-10 w-auto" />
           <div className="flex flex-col">
             <span className="text-xl font-bold text-primary">Medic</span>
@@ -32,7 +32,7 @@ export const Header = () => {
             <a
               key={item.label}
               href={item.href}
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300"
             >
               {item.label}
             </a>
