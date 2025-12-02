@@ -8,12 +8,20 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { label: "Início", href: "/" },
-    { label: "Planos", href: "/#planos" },
-    { label: "Benefícios", href: "/#beneficios" },
-    { label: "Rede Credenciada", href: "/clinicas" },
-    { label: "FAQ", href: "/#faq" },
+    { label: "Início", href: "/", isAnchor: false },
+    { label: "Planos", href: "#planos", isAnchor: true },
+    { label: "Benefícios", href: "#beneficios", isAnchor: true },
+    { label: "Rede Credenciada", href: "/clinicas", isAnchor: false },
+    { label: "FAQ", href: "#faq", isAnchor: true },
   ];
+
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -32,6 +40,7 @@ export const Header = () => {
             <a
               key={item.label}
               href={item.href}
+              onClick={item.isAnchor ? (e) => handleAnchorClick(e, item.href) : undefined}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300"
             >
               {item.label}
@@ -40,10 +49,10 @@ export const Header = () => {
         </nav>
 
         <div className="hidden md:flex items-center gap-2">
-          <Button variant="outline" size="sm" asChild>
+          <Button variant="outline" size="sm" className="rounded-xl" asChild>
             <a href="#area-cliente">Área do Cliente</a>
           </Button>
-          <Button size="sm" className="bg-secondary hover:bg-secondary/90" asChild>
+          <Button size="sm" className="bg-secondary hover:bg-secondary/90 rounded-xl" asChild>
             <a href="#adquirir">Adquira o seu Cartão</a>
           </Button>
         </div>
@@ -61,7 +70,12 @@ export const Header = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    if (item.isAnchor) {
+                      handleAnchorClick(e, item.href);
+                    }
+                    setIsOpen(false);
+                  }}
                   className="text-lg font-medium text-foreground hover:text-primary transition-colors"
                 >
                   {item.label}
