@@ -28,7 +28,7 @@ export const CTASection = () => {
           <div className="pt-4">
             <Button 
               size="lg" 
-              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-8 h-14"
+              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-8 h-14 rounded-2xl"
               asChild
             >
               <a href="#adquirir">ADQUIRA O SEU AGORA</a>

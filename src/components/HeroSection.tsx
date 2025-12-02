@@ -18,7 +18,7 @@ export const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
-                className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold"
+                className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold rounded-2xl"
                 asChild
               >
                 <a href="#planos">
@@ -29,7 +29,7 @@ export const HeroSection = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
+                className="border-primary-foreground/30 bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-2xl"
                 asChild
               >
                 <a href="#beneficios">Conheça os Benefícios</a>
