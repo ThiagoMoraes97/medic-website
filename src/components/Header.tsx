@@ -11,7 +11,6 @@ export const Header = () => {
     { label: "Início", href: "/", isAnchor: false },
     { label: "Planos", href: "#planos", isAnchor: true },
     { label: "Benefícios", href: "#beneficios", isAnchor: true },
-    { label: "Rede Credenciada", href: "/clinicas", isAnchor: false },
     { label: "FAQ", href: "#faq", isAnchor: true },
   ];
 
@@ -46,6 +45,13 @@ export const Header = () => {
               {item.label}
             </a>
           ))}
+          <span className="text-border">|</span>
+          <a
+            href="/clinicas"
+            className="text-sm font-medium px-4 py-1.5 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+          >
+            Rede Credenciada
+          </a>
         </nav>
 
         <div className="hidden md:flex items-center gap-2">
@@ -81,6 +87,13 @@ export const Header = () => {
                   {item.label}
                 </a>
               ))}
+              <a
+                href="/clinicas"
+                onClick={() => setIsOpen(false)}
+                className="text-lg font-medium px-4 py-2 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-center"
+              >
+                Rede Credenciada
+              </a>
               <div className="flex flex-col gap-2 mt-4">
                 <Button variant="outline" asChild>
                   <a href="#area-cliente">Área do Cliente</a>
