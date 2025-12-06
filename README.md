@@ -1,73 +1,167 @@
-# Welcome to your Lovable project
+﻿# Medic Benefícios - Website
 
-## Project info
+Platform moderna e responsiva para apresentação dos planos de saúde solidária Medic Benefícios.
 
-**URL**: https://lovable.dev/projects/34045d35-8cfd-4a7c-a735-6c0a8395c232
+##  Sobre o Projeto
 
-## How can I edit this code?
+Medic Benefícios é uma solução de saúde acessível que oferece:
+- **Planos flexíveis** (Essencial Vida e Conecta Saúde)
+- **Cobertura para até 8 pessoas** da família
+- **Telemedicina 24h** (plano Conecta Saúde)
+- **Rede credenciada** com 500+ estabelecimentos em todo Brasil
+- **Sem carência** e sem burocracia
 
-There are several ways of editing your application.
+##  Características
 
-**Use Lovable**
+### Páginas Principais
+- **Home** - Seção hero, benefícios, como funciona, planos, depoimentos e FAQ
+- **Planos** - Comparativo detalhado entre planos com checkouts integrados
+- **Rede Credenciada** - Buscador de clínicas e laboratórios com filtros
+- **Privacidade** - Política de privacidade completa
+- **Termos de Uso** - Termos e condições
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/34045d35-8cfd-4a7c-a735-6c0a8395c232) and start prompting.
+### Design & UX
+-  **Glassmorphism header** com blur effect profissional
+-  **Design system moderno** com Tailwind CSS
+-  **Totalmente responsivo** (mobile, tablet, desktop)
+-  **Performance otimizada** com Vite
+-  **Animações suaves** e transições profissionais
+-  **Integração WhatsApp** para contato direto
 
-Changes made via Lovable will be committed automatically to this repo.
+### Componentes
+- Sistema de cards com efeitos 3D
+- Premium card designs com chips metálicos
+- Filtros e buscadores interativos
+- Accordion FAQs
+- Badges e badges de status
+- Floating buttons para WhatsApp
 
-**Use your preferred IDE**
+##  Tecnologias
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Framework**: React 18+ com TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS + CSS custom properties
+- **UI Components**: shadcn/ui
+- **Routing**: React Router v6
+- **Icons**: Lucide React
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+##  Configuração Local
 
-Follow these steps:
+### Pré-requisitos
+- Node.js (v16+)
+- npm ou bun
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Instalação
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+\\\ash
+# Clonar o repositório
+git clone https://github.com/ThiagoMoraes97/medic-website.git
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Entrar no diretório
+cd medic-website
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Instalar dependências
+npm install
+# ou
+bun install
+
+# Iniciar servidor de desenvolvimento
 npm run dev
-```
+# ou
+bun run dev
+\\\
 
-**Edit a file directly in GitHub**
+O site estará disponível em \http://localhost:5173\
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+##  Scripts Disponíveis
 
-**Use GitHub Codespaces**
+\\\ash
+npm run dev      # Inicia servidor de desenvolvimento
+npm run build    # Build para produção
+npm run preview  # Preview da build de produção
+npm run lint     # Verifica erros com ESLint
+\\\
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+##  Estrutura do Projeto
 
-## What technologies are used for this project?
+\\\
+src/
+ components/          # Componentes reutilizáveis
+    Header.tsx      # Navegação com glassmorphism
+    Footer.tsx      # Rodapé
+    HeroSection.tsx # Seção principal com card premium
+    PlansSection.tsx
+    BenefitsGrid.tsx
+    HowItWorks.tsx
+    TestimonialsSection.tsx
+    FAQSection.tsx
+    CTASection.tsx
+    ui/             # Componentes shadcn/ui
+ pages/              # Páginas da aplicação
+    Index.tsx       # Homepage
+    Planos.tsx      # Página de planos
+    Clinicas.tsx    # Rede credenciada
+    Privacidade.tsx # Política de privacidade
+    Termos.tsx      # Termos de uso
+    NotFound.tsx    # 404
+ lib/
+    utils.ts        # Utilitários
+ App.tsx             # Componente principal
+ main.tsx            # Entry point
+\\\
 
-This project is built with:
+##  Funcionalidades Principais
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Home
+- Hero section com card premium 3D
+- Seção de benefícios com ícones
+- Como funciona (passo a passo)
+- Planos destacados
+- Depoimentos de clientes
+- Seção de FAQ interativa
+- CTA final para conversão
 
-## How can I deploy this project?
+### Planos
+- Comparativo detalhado dos 2 planos
+- Tabela de funcionalidades
+- Links de checkout integrados
+- Depoimentos
+- Garantias e trustmarks
 
-Simply open [Lovable](https://lovable.dev/projects/34045d35-8cfd-4a7c-a735-6c0a8395c232) and click on Share -> Publish.
+### Rede Credenciada
+- Buscador de clínicas
+- Filtros por especialidade e estado
+- Cards com informações completas
+- Avaliações e horários
 
-## Can I connect a custom domain to my Lovable project?
+##  Contato
 
-Yes, you can!
+- **WhatsApp**: +55 21 2042-0127
+- **Google Maps**: https://maps.app.goo.gl/HQgxDwSeWbCFQ1b68
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+##  Segurança & Privacidade
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+O site está em conformidade com:
+- LGPD (Lei Geral de Proteção de Dados)
+- Termos e políticas claramente estabelecidas
+
+##  Funcionalidades Futuras
+
+- [ ] Integração com backend para checkout
+- [ ] Área do Cliente (dashboard)
+- [ ] Chat com IA para suporte
+- [ ] Blog e artigos sobre saúde
+
+##  Licença
+
+Proprietary - Medic Benefícios
+
+##  Autor
+
+Desenvolvido por Thiago Moraes
+
+---
+
+**Status**:  Em produção
+
+Última atualização: Dezembro 5, 2025
