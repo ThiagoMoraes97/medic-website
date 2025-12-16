@@ -39,7 +39,7 @@ const clinicasMock: Clinica[] = [
     estado: "RJ",
     telefone: "(21) 99571-7282",
     horario: "Seg-Sex: 8h às 19h | Sáb: 8h às 12h",
-    imagem: "https://i.imgur.com/tJrosgt.png",
+    imagem: "https://i.imgur.com/fP5VBnn.png",
   },
   {
     id: 2,
@@ -51,7 +51,7 @@ const clinicasMock: Clinica[] = [
     estado: "RJ",
     telefone: "(21) 99571-7282",
     horario: "Seg-Sex: 8h às 19h",
-    imagem: "https://i.imgur.com/oW4wTxk.png",
+    imagem: "https://i.imgur.com/0kIZLLB.png",
   },
   {
     id: 3,
@@ -63,7 +63,7 @@ const clinicasMock: Clinica[] = [
     estado: "RJ",
     telefone: "(21) 99571-7282",
     horario: "Seg-Sex: 8h às 19h",
-    imagem: "https://i.imgur.com/56XsYkp.png",
+    imagem: "https://i.imgur.com/th5DnvX.png",
   },
 ];
 
@@ -233,7 +233,7 @@ const Clinicas = () => {
                     <img
                       src={clinica.imagem}
                       alt={clinica.nome}
-                      className="w-full h-full object-contain scale-100 group-hover:scale-105 transition-transform duration-700"
+                      className="w-full h-full object-contain p-8 scale-100 group-hover:scale-105 transition-transform duration-700"
                     />
                     {/* Gradient overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
