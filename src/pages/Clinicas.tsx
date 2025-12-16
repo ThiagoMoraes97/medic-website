@@ -19,97 +19,61 @@ interface Clinica {
   id: number;
   nome: string;
   especialidades: string[];
+  exames: string[];
   endereco: string;
   cidade: string;
   estado: string;
   telefone: string;
   horario: string;
-  avaliacao: number;
   imagem: string;
 }
 
 const clinicasMock: Clinica[] = [
   {
     id: 1,
-    nome: "Clínica Saúde & Vida",
-    especialidades: ["Clínico Geral", "Cardiologia", "Pediatria"],
-    endereco: "Av. Brasil, 1500 - Centro",
-    cidade: "Rio de Janeiro",
+    nome: "Clínica DH Med",
+    especialidades: ["Alergista", "Angiologista", "Clínico Geral", "Dermatologista", "Endocrinologista", "Gastroenterologista", "Geriatra", "Ginecologista", "Mastologista", "Neurologista", "Nutricionista", "Oftalmologista", "Ortopedista", "Otorrino", "Pediatra", "Proctologista", "Reumatologista", "Urologista", "Fonoaudiologista", "Psicologia", "Fisioterapia"],
+    exames: ["Mamografia", "Ultrassonografia", "Ultrassonografia c/ doppler", "Gonioscopia", "Pam", "Mapeamento de retina", "Raio-X", "Mapa 24h", "Holter 24h", "Ecocardiograma", "Eco Vértebras", "Doppler A.V", "Doppler A. Renais"],
+    endereco: "Estr. Caetano Monteiro, 789 - Badu",
+    cidade: "Niterói",
     estado: "RJ",
-    telefone: "(21) 3333-4444",
-    horario: "Seg-Sex: 7h às 19h | Sáb: 8h às 12h",
-    avaliacao: 4.8,
-    imagem: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=300&fit=crop",
+    telefone: "(21) 99571-7282",
+    horario: "Seg-Sex: 8h às 19h | Sáb: 8h às 12h",
+    imagem: "https://i.imgur.com/tJrosgt.png",
   },
   {
     id: 2,
-    nome: "Centro Médico Popular",
-    especialidades: ["Ortopedia", "Fisioterapia", "Neurologia"],
-    endereco: "Rua das Flores, 200 - Copacabana",
-    cidade: "Rio de Janeiro",
+    nome: "Clínica DH Med - Alcântara",
+    especialidades: ["Alergista", "Angiologista", "Clínico Geral", "Dermatologista", "Endocrinologista", "Gastroenterologista", "Geriatra", "Ginecologista", "Mastologista", "Neurologista", "Nutricionista", "Oftalmologista", "Ortopedista", "Otorrino", "Pediatra", "Proctologista", "Reumatologista", "Urologista", "Fonoaudiologista", "Psicologia", "Fisioterapia"],
+    exames: [],
+    endereco: "Rua Manoel João Gonçalves, N 414 - Sala 201 - Alcântara",
+    cidade: "São Gonçalo",
     estado: "RJ",
-    telefone: "(21) 2222-5555",
-    horario: "Seg-Sex: 8h às 20h",
-    avaliacao: 4.6,
-    imagem: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&h=300&fit=crop",
+    telefone: "(21) 99571-7282",
+    horario: "Seg-Sex: 8h às 19h",
+    imagem: "https://i.imgur.com/oW4wTxk.png",
   },
   {
     id: 3,
-    nome: "Laboratório Diagnóstico",
-    especialidades: ["Exames Laboratoriais", "Imagem"],
-    endereco: "Av. Paulista, 900 - Bela Vista",
-    cidade: "São Paulo",
-    estado: "SP",
-    telefone: "(11) 4444-6666",
-    horario: "Seg-Sáb: 6h às 18h",
-    avaliacao: 4.9,
-    imagem: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=400&h=300&fit=crop",
-  },
-  {
-    id: 4,
-    nome: "Clínica Bem Estar",
-    especialidades: ["Dermatologia", "Estética", "Nutrição"],
-    endereco: "Rua Augusta, 1200 - Consolação",
-    cidade: "São Paulo",
-    estado: "SP",
-    telefone: "(11) 5555-7777",
-    horario: "Seg-Sex: 9h às 21h | Sáb: 9h às 14h",
-    avaliacao: 4.7,
-    imagem: "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=400&h=300&fit=crop",
-  },
-  {
-    id: 5,
-    nome: "Hospital Popular",
-    especialidades: ["Emergência", "Cirurgia Geral", "UTI"],
-    endereco: "Av. Independência, 500 - Centro",
-    cidade: "Belo Horizonte",
-    estado: "MG",
-    telefone: "(31) 3333-8888",
-    horario: "24 horas",
-    avaliacao: 4.5,
-    imagem: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=400&h=300&fit=crop",
-  },
-  {
-    id: 6,
-    nome: "Ótica Visão Clara",
-    especialidades: ["Oftalmologia", "Óculos", "Lentes de Contato"],
-    endereco: "Shopping Center Norte, Loja 45",
-    cidade: "São Paulo",
-    estado: "SP",
-    telefone: "(11) 6666-9999",
-    horario: "Seg-Sáb: 10h às 22h | Dom: 14h às 20h",
-    avaliacao: 4.4,
-    imagem: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=400&h=300&fit=crop",
+    nome: "Clínica DH Med - Santa Rosa",
+    especialidades: ["Alergista", "Angiologista", "Clínico Geral", "Dermatologista", "Endocrinologista", "Gastroenterologista", "Geriatra", "Ginecologista", "Mastologista", "Neurologista", "Nutricionista", "Oftalmologista", "Ortopedista", "Otorrino", "Pediatra", "Proctologista", "Reumatologista", "Urologista", "Fonoaudiologista", "Psicologia", "Fisioterapia"],
+    exames: [],
+    endereco: "Rua Noronha Torrezão, 18 - Santa Rosa",
+    cidade: "Niterói",
+    estado: "RJ",
+    telefone: "(21) 99571-7282",
+    horario: "Seg-Sex: 8h às 19h",
+    imagem: "https://i.imgur.com/56XsYkp.png",
   },
 ];
 
 const especialidadesUnicas = [...new Set(clinicasMock.flatMap((c) => c.especialidades))];
-const estadosUnicos = [...new Set(clinicasMock.map((c) => c.estado))];
+const cidadesUnicas = [...new Set(clinicasMock.map((c) => c.cidade))];
 
 const Clinicas = () => {
   const [busca, setBusca] = useState("");
   const [especialidade, setEspecialidade] = useState<string>("todas");
-  const [estado, setEstado] = useState<string>("todos");
+  const [regiao, setRegiao] = useState<string>("todas");
 
   const clinicasFiltradas = clinicasMock.filter((clinica) => {
     const matchBusca =
@@ -120,15 +84,15 @@ const Clinicas = () => {
     const matchEspecialidade =
       especialidade === "todas" || clinica.especialidades.includes(especialidade);
 
-    const matchEstado = estado === "todos" || clinica.estado === estado;
+    const matchRegiao = regiao === "todas" || clinica.cidade === regiao;
 
-    return matchBusca && matchEspecialidade && matchEstado;
+    return matchBusca && matchEspecialidade && matchRegiao;
   });
 
   const stats = [
-    { icon: Building2, value: "500+", label: "Estabelecimentos" },
-    { icon: Users, value: "28", label: "Especialidades" },
-    { icon: Heart, value: "100%", label: "Cobertura Nacional" },
+    { icon: Building2, value: "3+", label: "Clínicas Credenciadas" },
+    { icon: Users, value: "28+", label: "Especialidades" },
+    { icon: Heart, value: "Niterói, São Gonçalo", label: "Regiões Atendidas" },
   ];
 
   return (
@@ -136,7 +100,7 @@ const Clinicas = () => {
       <Header />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-primary via-blue-600 to-blue-700 pt-12 pb-32 overflow-hidden">
+        <section className="relative bg-gradient-to-br from-primary via-blue-600 to-blue-700 pt-12 pb-16 overflow-hidden">
           {/* Background decorative elements */}
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/5 rounded-full blur-3xl" />
@@ -152,7 +116,7 @@ const Clinicas = () => {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-sm font-medium mb-6">
                 <Sparkles className="h-4 w-4 text-secondary" />
-                <span>Rede credenciada em todo Brasil</span>
+                <span>Rede credenciada em expansão</span>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">
@@ -161,9 +125,9 @@ const Clinicas = () => {
                   Rede Credenciada
                 </span>
               </h1>
-              <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-                Encontre clínicas, laboratórios e parceiros próximos a você. São mais de{" "}
-                <strong className="text-white">500 estabelecimentos</strong> em todo o Brasil prontos para atender você e sua família.
+              <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+                Conheça nossa rede credenciada de clínicas e laboratórios.{" "}
+                <strong className="text-white">Clínicas credenciadas</strong> com mais de 28 especialidades e 13 tipos de exames prontos para atender você e sua família em Niterói e São Gonçalo.
               </p>
             </div>
 
@@ -216,16 +180,16 @@ const Clinicas = () => {
                       ))}
                     </SelectContent>
                   </Select>
-                  <Select value={estado} onValueChange={setEstado}>
-                    <SelectTrigger className="w-full lg:w-[160px] rounded-xl h-14 border-gray-200 bg-gray-50/50">
+                  <Select value={regiao} onValueChange={setRegiao}>
+                    <SelectTrigger className="w-full lg:w-[180px] rounded-xl h-14 border-gray-200 bg-gray-50/50">
                       <MapPin className="h-4 w-4 mr-2 text-primary" />
-                      <SelectValue placeholder="Estado" />
+                      <SelectValue placeholder="Região" />
                     </SelectTrigger>
                     <SelectContent className="rounded-xl">
-                      <SelectItem value="todos">Todos estados</SelectItem>
-                      {estadosUnicos.map((est) => (
-                        <SelectItem key={est} value={est}>
-                          {est}
+                      <SelectItem value="todas">Todas regiões</SelectItem>
+                      {cidadesUnicas.map((cidade) => (
+                        <SelectItem key={cidade} value={cidade}>
+                          {cidade}
                         </SelectItem>
                       ))}
                     </SelectContent>
@@ -269,18 +233,10 @@ const Clinicas = () => {
                     <img
                       src={clinica.imagem}
                       alt={clinica.nome}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      className="w-full h-full object-contain scale-100 group-hover:scale-105 transition-transform duration-700"
                     />
                     {/* Gradient overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                    
-                    {/* Rating badge */}
-                    <div className="absolute top-4 right-4">
-                      <Badge className="bg-white/95 backdrop-blur-sm text-foreground rounded-full px-3 py-1.5 shadow-lg font-medium">
-                        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400 mr-1" />
-                        {clinica.avaliacao}
-                      </Badge>
-                    </div>
                     
                     {/* Location badge */}
                     <div className="absolute bottom-4 left-4">
@@ -297,7 +253,7 @@ const Clinicas = () => {
                         {clinica.nome}
                       </h3>
                       <div className="flex flex-wrap gap-2">
-                        {clinica.especialidades.map((esp) => (
+                        {clinica.especialidades.slice(0, 4).map((esp) => (
                           <Badge
                             key={esp}
                             variant="secondary"
@@ -306,6 +262,14 @@ const Clinicas = () => {
                             {esp}
                           </Badge>
                         ))}
+                        {clinica.especialidades.length > 4 && (
+                          <Badge
+                            variant="secondary"
+                            className="text-xs rounded-full px-3 py-1 bg-secondary/10 text-secondary font-semibold"
+                          >
+                            +{clinica.especialidades.length - 4} especialidades
+                          </Badge>
+                        )}
                       </div>
                     </div>
                     
@@ -332,9 +296,12 @@ const Clinicas = () => {
                     
                     <Button 
                       className="w-full h-12 rounded-xl bg-gradient-to-r from-secondary to-emerald-500 hover:from-secondary/90 hover:to-emerald-500/90 font-semibold shadow-md shadow-secondary/20 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/30 group/btn"
+                      asChild
                     >
-                      <span>Ver Detalhes</span>
-                      <ArrowRight className="h-4 w-4 ml-2 transition-transform duration-300 group-hover/btn:translate-x-1" />
+                      <a href={`tel:${clinica.telefone}`} className="flex items-center justify-center">
+                        <Phone className="h-4 w-4 mr-2" />
+                        <span>Entre em Contato</span>
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>
@@ -356,7 +323,7 @@ const Clinicas = () => {
                   onClick={() => {
                     setBusca("");
                     setEspecialidade("todas");
-                    setEstado("todos");
+                    setRegiao("todas");
                   }}
                 >
                   Limpar todos os filtros

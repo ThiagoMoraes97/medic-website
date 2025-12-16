@@ -16,9 +16,9 @@ export const Header = () => {
   }, []);
 
   const menuItems = [
-    { label: "Início", href: "/", isAnchor: false },
+    { label: "Início", href: "#inicio", isAnchor: true },
     { label: "Benefícios", href: "#beneficios", isAnchor: true },
-    { label: "Planos", href: "/planos", isAnchor: false },
+    { label: "Planos", href: "#planos", isAnchor: true },
     { label: "FAQ", href: "#faq", isAnchor: true },
   ];
 
@@ -131,7 +131,7 @@ export const Header = () => {
                   <a href="/login">Área do Cliente</a>
                 </Button> */}
                 <Button className="bg-gradient-to-r from-secondary to-emerald-500 rounded-xl h-12 font-semibold shadow-md" asChild>
-                  <a href="/planos">Adquira o seu Cartão</a>
+                  <a href="/planos" onClick={() => setIsOpen(false)}>Adquira o seu Cartão</a>
                 </Button>
               </div>
             </div>

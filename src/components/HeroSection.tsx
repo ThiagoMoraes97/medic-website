@@ -78,7 +78,7 @@ export const HeroSection = () => {
                 className="bg-[#2DD4A8] hover:bg-[#25BF97] text-slate-900 font-semibold rounded-full shadow-xl shadow-[#2DD4A8]/30 h-14 px-8 text-base transition-all duration-300 hover:shadow-2xl hover:shadow-[#2DD4A8]/40 hover:-translate-y-0.5"
                 asChild
               >
-                <a href="/planos" className="flex items-center gap-2">
+                <a href="#planos" className="flex items-center gap-2">
                   Adquira o seu Agora
                   <ArrowRight className="h-5 w-5" />
                 </a>
@@ -156,27 +156,23 @@ export const HeroSection = () => {
                                 <div className="text-white/40 text-[10px] md:text-xs font-medium tracking-[0.3em] mt-0.5">BENEFÍCIOS</div>
                               </div>
                               
-                              {/* Premium chip with realistic metallic effect */}
-                              <div className="relative w-14 h-11 md:w-16 md:h-12">
-                                {/* Chip shadow */}
-                                <div className="absolute inset-0 translate-y-1 bg-black/20 rounded-lg blur-sm" />
+                              {/* Logo badge - health plan style */}
+                              <div className="relative w-16 h-16 md:w-20 md:h-20">
+                                {/* Badge shadow */}
+                                <div className="absolute inset-0 translate-y-1 bg-black/20 rounded-full blur-sm" />
                                 
-                                {/* Chip base */}
-                                <div className="relative w-full h-full rounded-lg overflow-hidden shadow-lg">
-                                  {/* Gold gradient */}
-                                  <div className="absolute inset-0 bg-gradient-to-br from-yellow-200 via-yellow-400 to-yellow-600" />
-                                  <div className="absolute inset-0 bg-gradient-to-tr from-yellow-500/50 via-transparent to-yellow-200/50" />
+                                {/* Badge base */}
+                                <div className="relative w-full h-full rounded-full overflow-hidden shadow-lg border-2 border-white/30">
+                                  {/* White background */}
+                                  <div className="absolute inset-0 bg-white" />
                                   
-                                  {/* Chip lines */}
-                                  <div className="absolute inset-[3px] flex flex-col justify-center gap-[2px]">
-                                    <div className="flex gap-[2px]">
-                                      <div className="w-1/3 h-2 bg-yellow-600/30 rounded-sm" />
-                                      <div className="flex-1 h-2 bg-yellow-600/20 rounded-sm" />
-                                    </div>
-                                    <div className="w-full h-3 bg-yellow-600/20 rounded-sm" />
-                                    <div className="flex gap-[2px]">
-                                      <div className="flex-1 h-2 bg-yellow-600/20 rounded-sm" />
-                                      <div className="w-1/3 h-2 bg-yellow-600/30 rounded-sm" />
+                                  {/* Logo icon - medical cross */}
+                                  <div className="absolute inset-0 flex items-center justify-center">
+                                    <div className="relative">
+                                      {/* Vertical bar */}
+                                      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-2 md:w-2.5 h-8 md:h-10 bg-gradient-to-b from-blue-500 to-blue-600 rounded-full" />
+                                      {/* Horizontal bar */}
+                                      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 md:w-10 h-2 md:h-2.5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full" />
                                     </div>
                                   </div>
                                   
@@ -188,27 +184,10 @@ export const HeroSection = () => {
                             
                             <div className="space-y-3">
                               <div className="text-white/50 text-[10px] md:text-xs tracking-[0.25em] uppercase font-semibold">Cartão Solidário</div>
-                              <div className="flex items-center gap-4">
-                                <div className="flex items-center gap-2 text-white font-mono text-xl md:text-2xl tracking-[0.15em]">
-                                  <span className="flex gap-1">
-                                    <span className="w-2 h-2 md:w-2.5 md:h-2.5 bg-white/80 rounded-full" />
-                                    <span className="w-2 h-2 md:w-2.5 md:h-2.5 bg-white/80 rounded-full" />
-                                    <span className="w-2 h-2 md:w-2.5 md:h-2.5 bg-white/80 rounded-full" />
-                                    <span className="w-2 h-2 md:w-2.5 md:h-2.5 bg-white/80 rounded-full" />
-                                  </span>
-                                  <span className="flex gap-1">
-                                    <span className="w-2 h-2 md:w-2.5 md:h-2.5 bg-white/80 rounded-full" />
-                                    <span className="w-2 h-2 md:w-2.5 md:h-2.5 bg-white/80 rounded-full" />
-                                    <span className="w-2 h-2 md:w-2.5 md:h-2.5 bg-white/80 rounded-full" />
-                                    <span className="w-2 h-2 md:w-2.5 md:h-2.5 bg-white/80 rounded-full" />
-                                  </span>
-                                  <span className="flex gap-1">
-                                    <span className="w-2 h-2 md:w-2.5 md:h-2.5 bg-white/80 rounded-full" />
-                                    <span className="w-2 h-2 md:w-2.5 md:h-2.5 bg-white/80 rounded-full" />
-                                    <span className="w-2 h-2 md:w-2.5 md:h-2.5 bg-white/80 rounded-full" />
-                                    <span className="w-2 h-2 md:w-2.5 md:h-2.5 bg-white/80 rounded-full" />
-                                  </span>
-                                  <span className="text-white font-semibold">1234</span>
+                              <div className="flex flex-col gap-2">
+                                <div className="text-white/60 text-xs">Nº do Associado</div>
+                                <div className="text-white font-mono text-2xl md:text-3xl tracking-wider font-semibold">
+                                  0001234
                                 </div>
                               </div>
                             </div>

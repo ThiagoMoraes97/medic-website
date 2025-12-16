@@ -94,21 +94,15 @@ export const CTASection = () => {
                           <div className="text-white/40 text-[9px] md:text-[10px] font-medium tracking-[0.3em] mt-0.5">BENEFÍCIOS</div>
                         </div>
                         
-                        {/* Premium chip */}
-                        <div className="relative w-12 h-9 md:w-14 md:h-10">
-                          <div className="absolute inset-0 translate-y-0.5 bg-black/20 rounded-md blur-sm" />
-                          <div className="relative w-full h-full rounded-md overflow-hidden shadow-lg">
-                            <div className="absolute inset-0 bg-gradient-to-br from-yellow-200 via-yellow-400 to-yellow-600" />
-                            <div className="absolute inset-0 bg-gradient-to-tr from-yellow-500/50 via-transparent to-yellow-200/50" />
-                            <div className="absolute inset-[2px] flex flex-col justify-center gap-[1px]">
-                              <div className="flex gap-[1px]">
-                                <div className="w-1/3 h-1.5 bg-yellow-600/30 rounded-sm" />
-                                <div className="flex-1 h-1.5 bg-yellow-600/20 rounded-sm" />
-                              </div>
-                              <div className="w-full h-2 bg-yellow-600/20 rounded-sm" />
-                              <div className="flex gap-[1px]">
-                                <div className="flex-1 h-1.5 bg-yellow-600/20 rounded-sm" />
-                                <div className="w-1/3 h-1.5 bg-yellow-600/30 rounded-sm" />
+                        {/* Logo badge - health plan style */}
+                        <div className="relative w-14 h-14 md:w-16 md:h-16">
+                          <div className="absolute inset-0 translate-y-0.5 bg-black/20 rounded-full blur-sm" />
+                          <div className="relative w-full h-full rounded-full overflow-hidden shadow-lg border-2 border-white/30">
+                            <div className="absolute inset-0 bg-white" />
+                            <div className="absolute inset-0 flex items-center justify-center">
+                              <div className="relative">
+                                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-2 md:w-2.5 h-7 md:h-8 bg-gradient-to-b from-blue-500 to-blue-600 rounded-full" />
+                                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-7 md:w-8 h-2 md:h-2.5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full" />
                               </div>
                             </div>
                             <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-transparent" />
@@ -118,26 +112,11 @@ export const CTASection = () => {
                       
                       <div className="space-y-2">
                         <div className="text-white/50 text-[9px] md:text-[10px] tracking-[0.25em] uppercase font-semibold">Cartão Solidário</div>
-                        <div className="flex items-center gap-3 text-white font-mono text-base md:text-lg tracking-[0.1em]">
-                          <span className="flex gap-0.5">
-                            <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white/80 rounded-full" />
-                            <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white/80 rounded-full" />
-                            <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white/80 rounded-full" />
-                            <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white/80 rounded-full" />
-                          </span>
-                          <span className="flex gap-0.5">
-                            <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white/80 rounded-full" />
-                            <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white/80 rounded-full" />
-                            <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white/80 rounded-full" />
-                            <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white/80 rounded-full" />
-                          </span>
-                          <span className="flex gap-0.5">
-                            <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white/80 rounded-full" />
-                            <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white/80 rounded-full" />
-                            <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white/80 rounded-full" />
-                            <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white/80 rounded-full" />
-                          </span>
-                          <span className="text-white font-semibold">1234</span>
+                        <div className="flex flex-col gap-1.5">
+                          <div className="text-white/60 text-[10px]">Nº do Associado</div>
+                          <div className="text-white font-mono text-xl md:text-2xl tracking-wider font-semibold">
+                            0001234
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -182,7 +161,7 @@ export const CTASection = () => {
               className="relative bg-gradient-to-r from-[#2DD4A8] to-emerald-500 hover:from-[#25BF97] hover:to-emerald-600 text-slate-900 text-base md:text-lg px-10 md:px-14 h-14 md:h-16 rounded-full font-bold shadow-2xl shadow-emerald-500/30 transition-all duration-300 hover:shadow-emerald-500/50 hover:-translate-y-1 hover:scale-[1.02]"
               asChild
             >
-              <a href="/planos" className="flex items-center gap-3">
+              <a href="#planos" className="flex items-center gap-3">
                 ADQUIRA O SEU AGORA
                 <ArrowRight className="h-5 w-5" />
               </a>

@@ -10,7 +10,7 @@ export const HowItWorks = () => {
       title: "Escolha o seu plano",
       description: "O Cartão Solidário tem um valor mensal acessível e garante acesso a médicos e exames para toda a sua família, sem surpresas no preço.",
       linkText: "Ver planos",
-      linkHref: "/planos",
+      linkHref: "#planos",
       color: "from-blue-500 to-primary",
     },
     {
@@ -19,7 +19,7 @@ export const HowItWorks = () => {
       title: "Faça sua adesão online",
       description: "O processo é simples e rápido. Preencha seus dados em poucos minutos e comece a usar seus benefícios imediatamente.",
       linkText: "Começar agora",
-      linkHref: "/planos",
+      linkHref: "#planos",
       color: "from-violet-500 to-purple-600",
     },
     {
@@ -101,7 +101,7 @@ export const HowItWorks = () => {
             className="bg-gradient-to-r from-secondary to-emerald-500 hover:from-secondary/90 hover:to-emerald-500/90 rounded-full shadow-lg shadow-secondary/25 h-14 px-10 text-base font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-secondary/30" 
             asChild
           >
-            <a href="/planos" className="flex items-center gap-2">
+            <a href="#planos" className="flex items-center gap-2">
               Adquira o seu Agora
               <ArrowRight className="h-5 w-5" />
             </a>

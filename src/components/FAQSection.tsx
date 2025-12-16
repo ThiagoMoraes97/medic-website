@@ -62,7 +62,7 @@ export const FAQSection = () => {
                 className="bg-gradient-to-r from-primary to-blue-600 hover:opacity-90 rounded-full h-12 px-6 font-semibold shadow-lg shadow-primary/20" 
                 asChild
               >
-                <a href="/planos" className="flex items-center gap-2">
+                <a href="#planos" className="flex items-center gap-2">
                   Adquira Agora
                   <ArrowRight className="h-4 w-4" />
                 </a>
