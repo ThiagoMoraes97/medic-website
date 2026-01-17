@@ -27,7 +27,7 @@ export const Footer = () => {
             </p>
             <div className="flex gap-3">
               <a 
-                href="https://facebook.com" 
+                href="https://www.facebook.com/medicbeneficios/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-xl bg-white/5 hover:bg-primary flex items-center justify-center transition-all duration-300 hover:scale-105"
@@ -36,7 +36,7 @@ export const Footer = () => {
                 <Facebook className="h-5 w-5" />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/medicbeneficios" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-xl bg-white/5 hover:bg-gradient-to-br hover:from-purple-500 hover:to-pink-500 flex items-center justify-center transition-all duration-300 hover:scale-105"
