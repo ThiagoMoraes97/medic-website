@@ -117,9 +117,14 @@ export const Footer = () => {
         {/* Bottom bar */}
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-white/40 text-sm text-center md:text-left">
-              © 2025 Todos os Direitos Reservados - Medic Benefícios
-            </p>
+            <div className="text-center md:text-left">
+              <p className="text-white/40 text-sm">
+                © {new Date().getFullYear()} Todos os Direitos Reservados - Medic Benefícios
+              </p>
+              <p className="text-white/30 text-xs mt-1">
+                CNPJ: 58.936.273/0001-22
+              </p>
+            </div>
             <div className="flex items-center gap-6 text-sm">
               <a href="/privacidade" className="text-white/40 hover:text-white transition-colors duration-200">
                 Política de Privacidade
@@ -128,11 +133,6 @@ export const Footer = () => {
                 Termos de Uso
               </a>
             </div>
-          </div>
-          <div className="text-center mt-6">
-            <p className="text-white/30 text-xs flex items-center justify-center gap-1">
-              Feito com <Heart className="h-3 w-3 text-red-500 fill-red-500" /> para cuidar de você
-            </p>
           </div>
         </div>
       </div>
