@@ -38,7 +38,7 @@ const clinicasMock: Clinica[] = [
     cidade: "Niterói",
     estado: "RJ",
     telefone: "(21) 99571-7282",
-    horario: "Seg-Sex: 8h às 19h | Sáb: 8h às 12h",
+    horario: "Seg-Sex: 7h às 17h | Sáb: 7h às 12h",
     imagem: "https://i.imgur.com/fP5VBnn.png",
   },
   {
@@ -50,7 +50,7 @@ const clinicasMock: Clinica[] = [
     cidade: "São Gonçalo",
     estado: "RJ",
     telefone: "(21) 99571-7282",
-    horario: "Seg-Sex: 8h às 19h",
+    horario: "Seg-Sex: 7h às 17h | Sáb: 7h às 12h",
     imagem: "https://i.imgur.com/0kIZLLB.png",
   },
   {
@@ -62,7 +62,7 @@ const clinicasMock: Clinica[] = [
     cidade: "Niterói",
     estado: "RJ",
     telefone: "(21) 99571-7282",
-    horario: "Seg-Sex: 8h às 19h",
+    horario: "Seg-Sex: 7h às 17h | Sáb: 7h às 12h",
     imagem: "https://i.imgur.com/th5DnvX.png",
   },
 ];
